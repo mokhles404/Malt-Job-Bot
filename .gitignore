@@ -1,0 +1,10 @@
+venv/
+chrome-malt-profile/
+malt_state.json
+malt_profile/
+handled_threads.json
+daily_counter.json
+.env
+logs/
+__pycache__/
+*.pyc

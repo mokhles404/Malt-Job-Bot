@@ -1,0 +1,68 @@
+# --- Offer selection rules ---
+
+budget:
+  min_daily: 300
+  min_total: 500
+
+keywords:
+  include:
+    - flutter
+    - mobile
+    - dart
+    - application mobile
+    - ios
+    - android
+    - react
+    - react native
+    - node
+    - nodejs
+    - firebase
+    - mongodb
+    - api
+    - fullstack
+    - full stack
+    - backend
+    - frontend
+    - python
+    - scraping
+    - automation
+    - data
+    - script
+    - bot
+    - django
+    - flask
+    - fastapi
+    - graphql
+    - typescript
+    - javascript
+  exclude:
+    - wordpress
+    - php
+    - drupal
+
+# --- Cover letter settings ---
+
+cover_letter:
+  your_name: "Mokhles Lajimi"
+  your_specialty: "développement mobile Flutter & web Full Stack"
+  your_experience_summary: >
+    plus de 4 ans d'expérience en développement mobile Flutter et Full Stack.
+    J'ai conçu et déployé plusieurs applications multiplateformes (iOS/Android)
+    sur le Play Store et l'App Store, incluant des plateformes de mise en relation,
+    des solutions de transport, et des outils de gestion pour des académies sportives.
+    Mon stack principal : Flutter, Node.js, Firebase, MongoDB, React.js, GraphQL
+  your_cv_summary: >
+    Ingénieur en informatique, spécialisé Flutter/Full Stack.
+    +4 ans d'expérience, applications publiées sur les stores,
+    architecture backend Node.js/MongoDB, intégration Stripe/PayPal,
+    chat temps réel, notifications push, géolocalisation.
+
+  # Calendly or scheduling link (leave empty if none)
+  scheduling_link: "https://calendly.com/mokhleslajimi/30min"
+
+# --- Throttle & safety ---
+
+throttle:
+  delay_between_offers_min: 2
+  delay_between_offers_max: 5
+  delay_before_send: 3
