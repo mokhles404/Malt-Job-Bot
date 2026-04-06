@@ -30,12 +30,15 @@ cp .env.example .env
 CHROME_CDP_URL=http://127.0.0.1:9222
 ```
 
-Example (from the project directory):
+The default **`malt_bot.py`** flow uses **`chrome_cdp.py`**, which launches **Chrome-Debug** under your OS Chrome folder (symlinked to your real profile)—not a folder inside this repo.
+
+Optional manual CDP (only if you set `CHROME_CDP_URL` yourself). Use **any empty directory** outside the repo, never your main Chrome profile while everyday Chrome is open:
 
 ```bash
+mkdir -p "$HOME/chrome-malt-cdp"
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
   --remote-debugging-port=9222 \
-  --user-data-dir="$(pwd)/chrome-malt-profile"
+  --user-data-dir="$HOME/chrome-malt-cdp"
 ```
 
 Leave that Chrome window running while the bot runs; **do not** point `--user-data-dir` at your normal Chrome profile if everyday Chrome is already open.
